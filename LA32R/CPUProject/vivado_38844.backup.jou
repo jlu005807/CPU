@@ -1,0 +1,72 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Sat Mar  8 20:07:20 2025
+# Process ID: 38844
+# Current directory: D:/MIPS/LA32R/CPUProject
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent50204 D:\MIPS\LA32R\CPUProject\thinpad_top.xpr
+# Log file: D:/MIPS/LA32R/CPUProject/vivado.log
+# Journal file: D:/MIPS/LA32R/CPUProject\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/MIPS/LA32R/CPUProject/thinpad_top.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source tb.tcl
+run 5 us
+relaunch_sim
+current_wave_config {Untitled 1}
+add_wave {{/tb/dut/cpu}} 
+run 5 us
+close_sim
+launch_simulation
+source tb.tcl
+current_wave_config {Untitled 2}
+add_wave {{/tb/dut/cpu}} 
+run 5 us
+close_sim
+launch_simulation
+source tb.tcl
+current_wave_config {Untitled 3}
+add_wave {{/tb/dut/cpu}} 
+run 5 us
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+close_sim
+launch_simulation
+source tb.tcl
+current_wave_config {Untitled 4}
+add_wave {{/tb/dut/cpu}} 
+run 5 us
+relaunch_sim
+current_wave_config {Untitled 4}
+add_wave {{/tb/dut/cpu/resolve_branch}} 
+run 5 us
+relaunch_sim
+run 5 us
+close_sim
+launch_simulation
+source tb.tcl
+current_wave_config {Untitled 5}
+add_wave {{/tb/dut/cpu}} 
+run 5 us
+relaunch_sim
+run 5 us
+relaunch_sim
+close_sim
+launch_simulation
+source tb.tcl
+current_wave_config {Untitled 6}
+add_wave {{/tb/dut/cpu}} 
+run 5 us
+close_sim
+launch_simulation
+source tb.tcl
+current_wave_config {Untitled 7}
+add_wave {{/tb/dut/cpu}} 
+run 5 us
+relaunch_sim
+close_sim

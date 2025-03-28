@@ -1,0 +1,89 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Tue Feb 25 11:28:37 2025
+| Host         : ozy running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file thinpad_top_control_sets_placed.rpt
+| Design       : thinpad_top
+| Device       : xc7a200t
+----------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    11 |
+|    Minimum number of control sets                        |    11 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    47 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    11 |
+| >= 0 to < 4        |     3 |
+| >= 4 to < 6        |     0 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |     1 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |     7 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               9 |            5 |
+| No           | No                    | Yes                    |               2 |            2 |
+| No           | Yes                   | No                     |             613 |          200 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             129 |           50 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------------------------------+--------------------------------------+-------------------------------------+------------------+----------------+
+|              Clock Signal              |             Enable Signal            |           Set/Reset Signal          | Slice Load Count | Bel Load Count |
++----------------------------------------+--------------------------------------+-------------------------------------+------------------+----------------+
+|  cpu/id_ex_register/PCsrc_reg[1]_0     |                                      |                                     |                1 |              1 |
+|  clock_gen/inst/clk_out1               |                                      | reset_of_clk10M                     |                1 |              1 |
+|  clock_gen/inst/clk_out1               |                                      | reset_of_clk10M_i_1_n_0             |                1 |              1 |
+|  cpu/id_ex_register/ALUop_reg[3]_0[0]  |                                      |                                     |                4 |              8 |
+|  cpu/control/RegDst_inferred__0/i__n_0 |                                      | cpu/if_id_register/AR[0]            |                6 |             17 |
+|  clock_gen/inst/clk_out1               | cpu/id_ex_register/E[0]              | rst                                 |               15 |             32 |
+|  clock_gen/inst/clk_out1               | cpu/id_ex_register/PCsrc_reg[2]_0    |                                     |               22 |             88 |
+|  clock_gen/inst/clk_out1               | cpu/mem_wb_register/Regfile_RegWrite |                                     |               12 |             96 |
+|  clock_gen/inst/clk_out1               | cpu/id_ex_register/MemRead_reg_0[0]  | cpu/id_ex_register/SR[0]            |               35 |             97 |
+|  clock_gen/inst/clk_out1               |                                      | cpu/id_ex_register/RegWrite_i_1_n_0 |               58 |            194 |
+|  clock_gen/inst/clk_out1               |                                      | rst                                 |              136 |            402 |
++----------------------------------------+--------------------------------------+-------------------------------------+------------------+----------------+
+
+

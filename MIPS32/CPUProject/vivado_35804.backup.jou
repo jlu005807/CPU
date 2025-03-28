@@ -1,0 +1,17 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Fri Feb 28 14:49:23 2025
+# Process ID: 35804
+# Current directory: D:/MIPS/CPUProject
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13496 D:\MIPS\CPUProject\thinpad_top.xpr
+# Log file: D:/MIPS/CPUProject/vivado.log
+# Journal file: D:/MIPS/CPUProject\vivado.jou
+#-----------------------------------------------------------
+start_guioopen_project D:/MIPS/CPUProject/thinpad_top.xprupdate_compile_order -fileset sources_1
+launch_simulation
+source tb.tcl
+run 10 us
+run 10 us
+close_sim

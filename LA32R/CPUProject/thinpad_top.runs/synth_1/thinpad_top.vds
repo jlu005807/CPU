@@ -1,0 +1,761 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Sun Mar  9 20:12:31 2025
+# Process ID: 70704
+# Current directory: D:/MIPS/LA32R/CPUProject/thinpad_top.runs/synth_1
+# Command line: vivado.exe -log thinpad_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source thinpad_top.tcl
+# Log file: D:/MIPS/LA32R/CPUProject/thinpad_top.runs/synth_1/thinpad_top.vds
+# Journal file: D:/MIPS/LA32R/CPUProject/thinpad_top.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source thinpad_top.tcl -notrace
+Command: synth_design -top thinpad_top -part xc7a200tfbg676-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: [Device 21-403] Loading part xc7a200tfbg676-2
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 80088 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1013.934 ; gain = 234.512
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'thinpad_top' [D:/MIPS/LA32R/CPUProject/thinpad_top.srcs/sources_1/new/thinpad_top.v:3]
+INFO: [Synth 8-6157] synthesizing module 'pll_example' [D:/MIPS/LA32R/CPUProject/thinpad_top.runs/synth_1/.Xil/Vivado-70704-ozy/realtime/pll_example_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'pll_example' (1#1) [D:/MIPS/LA32R/CPUProject/thinpad_top.runs/synth_1/.Xil/Vivado-70704-ozy/realtime/pll_example_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'CPU' [D:/MIPS/LA32R/CPUProject/thinpad_top.srcs/sources_1/new/CPU.v:1]
+INFO: [Synth 8-6157] synthesizing module 'PC' [D:/MIPS/LA32R/CPUProject/thinpad_top.srcs/sources_1/new/PC.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'PC' (2#1) [D:/MIPS/LA32R/CPUProject/thinpad_top.srcs/sources_1/new/PC.v:23]
+INFO: [Synth 8-6157] synthesizing module 'BHT' [D:/MIPS/LA32R/CPUProject/thinpad_top.srcs/sources_1/new/BHT.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'BHT' (3#1) [D:/MIPS/LA32R/CPUProject/thinpad_top.srcs/sources_1/new/BHT.v:1]
+INFO: [Synth 8-6157] synthesizing module 'BTB' [D:/MIPS/LA32R/CPUProject/thinpad_top.srcs/sources_1/new/BTB.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'BTB' (4#1) [D:/MIPS/LA32R/CPUProject/thinpad_top.srcs/sources_1/new/BTB.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Resolve_Branch' [D:/MIPS/LA32R/CPUProject/thinpad_top.srcs/sources_1/new/Resolve_Branch.v:3]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/MIPS/LA32R/CPUProject/thinpad_top.srcs/sources_1/new/Resolve_Branch.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Resolve_Branch' (5#1) [D:/MIPS/LA32R/CPUProject/thinpad_top.srcs/sources_1/new/Resolve_Branch.v:3]
+WARNING: [Synth 8-7023] instance 'resolve_branch' of module 'Resolve_Branch' has 6 connections declared, but only 5 given [D:/MIPS/LA32R/CPUProject/thinpad_top.srcs/sources_1/new/CPU.v:68]
+INFO: [Synth 8-6157] synthesizing module 'IF_ID_Register' [D:/MIPS/LA32R/CPUProject/thinpad_top.srcs/sources_1/new/IF_ID_Register.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'IF_ID_Register' (6#1) [D:/MIPS/LA32R/CPUProject/thinpad_top.srcs/sources_1/new/IF_ID_Register.v:1]
+WARNING: [Synth 8-7023] instance 'if_id_register' of module 'IF_ID_Register' has 12 connections declared, but only 10 given [D:/MIPS/LA32R/CPUProject/thinpad_top.srcs/sources_1/new/CPU.v:92]
+INFO: [Synth 8-6157] synthesizing module 'Control' [D:/MIPS/LA32R/CPUProject/thinpad_top.srcs/sources_1/new/Control.v:25]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/MIPS/LA32R/CPUProject/thinpad_top.srcs/sources_1/new/Control.v:71]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/MIPS/LA32R/CPUProject/thinpad_top.srcs/sources_1/new/Control.v:96]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/MIPS/LA32R/CPUProject/thinpad_top.srcs/sources_1/new/Control.v:168]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/MIPS/LA32R/CPUProject/thinpad_top.srcs/sources_1/new/Control.v:217]
+INFO: [Synth 8-6155] done synthesizing module 'Control' (7#1) [D:/MIPS/LA32R/CPUProject/thinpad_top.srcs/sources_1/new/Control.v:25]
+INFO: [Synth 8-6157] synthesizing module 'regfile' [D:/MIPS/LA32R/CPUProject/thinpad_top.srcs/sources_1/new/regfile.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'regfile' (8#1) [D:/MIPS/LA32R/CPUProject/thinpad_top.srcs/sources_1/new/regfile.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Extension' [D:/MIPS/LA32R/CPUProject/thinpad_top.srcs/sources_1/new/Extension.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Extension' (9#1) [D:/MIPS/LA32R/CPUProject/thinpad_top.srcs/sources_1/new/Extension.v:1]
+WARNING: [Synth 8-689] width (26) of port connection 'immediate' does not match port width (21) of module 'Extension' [D:/MIPS/LA32R/CPUProject/thinpad_top.srcs/sources_1/new/CPU.v:173]
+INFO: [Synth 8-6157] synthesizing module 'ID_EX_Register' [D:/MIPS/LA32R/CPUProject/thinpad_top.srcs/sources_1/new/ID_EX_Register.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'ID_EX_Register' (10#1) [D:/MIPS/LA32R/CPUProject/thinpad_top.srcs/sources_1/new/ID_EX_Register.v:1]
+WARNING: [Synth 8-689] width (5) of port connection 'funct' does not match port width (6) of module 'ID_EX_Register' [D:/MIPS/LA32R/CPUProject/thinpad_top.srcs/sources_1/new/CPU.v:241]
+WARNING: [Synth 8-689] width (5) of port connection 'ui5' does not match port width (6) of module 'ID_EX_Register' [D:/MIPS/LA32R/CPUProject/thinpad_top.srcs/sources_1/new/CPU.v:242]
+INFO: [Synth 8-6157] synthesizing module 'ALU_Control' [D:/MIPS/LA32R/CPUProject/thinpad_top.srcs/sources_1/new/ALU_Control.v:3]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/MIPS/LA32R/CPUProject/thinpad_top.srcs/sources_1/new/ALU_Control.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'ALU_Control' (11#1) [D:/MIPS/LA32R/CPUProject/thinpad_top.srcs/sources_1/new/ALU_Control.v:3]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [D:/MIPS/LA32R/CPUProject/thinpad_top.srcs/sources_1/new/ALU.v:23]
+INFO: [Synth 8-6157] synthesizing module 'CarryLookaheadAdder32' [D:/MIPS/LA32R/CPUProject/thinpad_top.srcs/sources_1/new/Adder.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'CarryLookaheadAdder32' (12#1) [D:/MIPS/LA32R/CPUProject/thinpad_top.srcs/sources_1/new/Adder.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (13#1) [D:/MIPS/LA32R/CPUProject/thinpad_top.srcs/sources_1/new/ALU.v:23]
+INFO: [Synth 8-6157] synthesizing module 'branch_check' [D:/MIPS/LA32R/CPUProject/thinpad_top.srcs/sources_1/new/branch_check.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'branch_check' (14#1) [D:/MIPS/LA32R/CPUProject/thinpad_top.srcs/sources_1/new/branch_check.v:2]
+INFO: [Synth 8-6157] synthesizing module 'EX_MEM_Register' [D:/MIPS/LA32R/CPUProject/thinpad_top.srcs/sources_1/new/EX_MEM_Register.v:1]
+INFO: [Synth 8-4471] merging register 'EX_MEM_Ext_ram_Address_reg[31:0]' into 'EX_MEM_ALU_OUT_reg[31:0]' [D:/MIPS/LA32R/CPUProject/thinpad_top.srcs/sources_1/new/EX_MEM_Register.v:35]
+WARNING: [Synth 8-6014] Unused sequential element EX_MEM_Ext_ram_Address_reg was removed.  [D:/MIPS/LA32R/CPUProject/thinpad_top.srcs/sources_1/new/EX_MEM_Register.v:35]
+INFO: [Synth 8-6155] done synthesizing module 'EX_MEM_Register' (15#1) [D:/MIPS/LA32R/CPUProject/thinpad_top.srcs/sources_1/new/EX_MEM_Register.v:1]
+INFO: [Synth 8-6157] synthesizing module 'MEM_WB_Register' [D:/MIPS/LA32R/CPUProject/thinpad_top.srcs/sources_1/new/MEM_WB_Register.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'MEM_WB_Register' (16#1) [D:/MIPS/LA32R/CPUProject/thinpad_top.srcs/sources_1/new/MEM_WB_Register.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Load_use_Data_Hazard' [D:/MIPS/LA32R/CPUProject/thinpad_top.srcs/sources_1/new/Load_use_Data_Hazard.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Load_use_Data_Hazard' (17#1) [D:/MIPS/LA32R/CPUProject/thinpad_top.srcs/sources_1/new/Load_use_Data_Hazard.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Forward' [D:/MIPS/LA32R/CPUProject/thinpad_top.srcs/sources_1/new/Forward.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Forward' (18#1) [D:/MIPS/LA32R/CPUProject/thinpad_top.srcs/sources_1/new/Forward.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'CPU' (19#1) [D:/MIPS/LA32R/CPUProject/thinpad_top.srcs/sources_1/new/CPU.v:1]
+WARNING: [Synth 8-3848] Net leds in module/entity thinpad_top does not have driver. [D:/MIPS/LA32R/CPUProject/thinpad_top.srcs/sources_1/new/thinpad_top.v:12]
+WARNING: [Synth 8-3848] Net dpy0 in module/entity thinpad_top does not have driver. [D:/MIPS/LA32R/CPUProject/thinpad_top.srcs/sources_1/new/thinpad_top.v:13]
+WARNING: [Synth 8-3848] Net dpy1 in module/entity thinpad_top does not have driver. [D:/MIPS/LA32R/CPUProject/thinpad_top.srcs/sources_1/new/thinpad_top.v:14]
+WARNING: [Synth 8-3848] Net txd in module/entity thinpad_top does not have driver. [D:/MIPS/LA32R/CPUProject/thinpad_top.srcs/sources_1/new/thinpad_top.v:34]
+WARNING: [Synth 8-3848] Net flash_a in module/entity thinpad_top does not have driver. [D:/MIPS/LA32R/CPUProject/thinpad_top.srcs/sources_1/new/thinpad_top.v:38]
+WARNING: [Synth 8-3848] Net flash_rp_n in module/entity thinpad_top does not have driver. [D:/MIPS/LA32R/CPUProject/thinpad_top.srcs/sources_1/new/thinpad_top.v:40]
+WARNING: [Synth 8-3848] Net flash_vpen in module/entity thinpad_top does not have driver. [D:/MIPS/LA32R/CPUProject/thinpad_top.srcs/sources_1/new/thinpad_top.v:41]
+WARNING: [Synth 8-3848] Net flash_ce_n in module/entity thinpad_top does not have driver. [D:/MIPS/LA32R/CPUProject/thinpad_top.srcs/sources_1/new/thinpad_top.v:42]
+WARNING: [Synth 8-3848] Net flash_oe_n in module/entity thinpad_top does not have driver. [D:/MIPS/LA32R/CPUProject/thinpad_top.srcs/sources_1/new/thinpad_top.v:43]
+WARNING: [Synth 8-3848] Net flash_we_n in module/entity thinpad_top does not have driver. [D:/MIPS/LA32R/CPUProject/thinpad_top.srcs/sources_1/new/thinpad_top.v:44]
+WARNING: [Synth 8-3848] Net flash_byte_n in module/entity thinpad_top does not have driver. [D:/MIPS/LA32R/CPUProject/thinpad_top.srcs/sources_1/new/thinpad_top.v:45]
+WARNING: [Synth 8-3848] Net video_red in module/entity thinpad_top does not have driver. [D:/MIPS/LA32R/CPUProject/thinpad_top.srcs/sources_1/new/thinpad_top.v:48]
+WARNING: [Synth 8-3848] Net video_green in module/entity thinpad_top does not have driver. [D:/MIPS/LA32R/CPUProject/thinpad_top.srcs/sources_1/new/thinpad_top.v:49]
+WARNING: [Synth 8-3848] Net video_blue in module/entity thinpad_top does not have driver. [D:/MIPS/LA32R/CPUProject/thinpad_top.srcs/sources_1/new/thinpad_top.v:50]
+WARNING: [Synth 8-3848] Net video_hsync in module/entity thinpad_top does not have driver. [D:/MIPS/LA32R/CPUProject/thinpad_top.srcs/sources_1/new/thinpad_top.v:51]
+WARNING: [Synth 8-3848] Net video_vsync in module/entity thinpad_top does not have driver. [D:/MIPS/LA32R/CPUProject/thinpad_top.srcs/sources_1/new/thinpad_top.v:52]
+WARNING: [Synth 8-3848] Net video_clk in module/entity thinpad_top does not have driver. [D:/MIPS/LA32R/CPUProject/thinpad_top.srcs/sources_1/new/thinpad_top.v:53]
+WARNING: [Synth 8-3848] Net video_de in module/entity thinpad_top does not have driver. [D:/MIPS/LA32R/CPUProject/thinpad_top.srcs/sources_1/new/thinpad_top.v:54]
+INFO: [Synth 8-6155] done synthesizing module 'thinpad_top' (20#1) [D:/MIPS/LA32R/CPUProject/thinpad_top.srcs/sources_1/new/thinpad_top.v:3]
+WARNING: [Synth 8-3331] design Load_use_Data_Hazard has unconnected port clk
+WARNING: [Synth 8-3331] design Extension has unconnected port immediate[25]
+WARNING: [Synth 8-3331] design Resolve_Branch has unconnected port instruction[9]
+WARNING: [Synth 8-3331] design Resolve_Branch has unconnected port instruction[8]
+WARNING: [Synth 8-3331] design BHT has unconnected port PC_in[31]
+WARNING: [Synth 8-3331] design BHT has unconnected port PC_in[30]
+WARNING: [Synth 8-3331] design BHT has unconnected port PC_in[29]
+WARNING: [Synth 8-3331] design BHT has unconnected port PC_in[28]
+WARNING: [Synth 8-3331] design BHT has unconnected port PC_in[27]
+WARNING: [Synth 8-3331] design BHT has unconnected port PC_in[26]
+WARNING: [Synth 8-3331] design BHT has unconnected port PC_in[25]
+WARNING: [Synth 8-3331] design BHT has unconnected port PC_in[24]
+WARNING: [Synth 8-3331] design BHT has unconnected port PC_in[23]
+WARNING: [Synth 8-3331] design BHT has unconnected port PC_in[22]
+WARNING: [Synth 8-3331] design BHT has unconnected port PC_in[21]
+WARNING: [Synth 8-3331] design BHT has unconnected port PC_in[20]
+WARNING: [Synth 8-3331] design BHT has unconnected port PC_in[19]
+WARNING: [Synth 8-3331] design BHT has unconnected port PC_in[18]
+WARNING: [Synth 8-3331] design BHT has unconnected port PC_in[17]
+WARNING: [Synth 8-3331] design BHT has unconnected port PC_in[16]
+WARNING: [Synth 8-3331] design BHT has unconnected port PC_in[15]
+WARNING: [Synth 8-3331] design BHT has unconnected port PC_in[14]
+WARNING: [Synth 8-3331] design BHT has unconnected port PC_in[13]
+WARNING: [Synth 8-3331] design BHT has unconnected port PC_in[12]
+WARNING: [Synth 8-3331] design BHT has unconnected port PC_in[11]
+WARNING: [Synth 8-3331] design BHT has unconnected port PC_in[10]
+WARNING: [Synth 8-3331] design BHT has unconnected port PC_in[9]
+WARNING: [Synth 8-3331] design BHT has unconnected port PC_in[8]
+WARNING: [Synth 8-3331] design BHT has unconnected port PC_in[1]
+WARNING: [Synth 8-3331] design BHT has unconnected port PC_in[0]
+WARNING: [Synth 8-3331] design BHT has unconnected port update_PC[31]
+WARNING: [Synth 8-3331] design BHT has unconnected port update_PC[30]
+WARNING: [Synth 8-3331] design BHT has unconnected port update_PC[29]
+WARNING: [Synth 8-3331] design BHT has unconnected port update_PC[28]
+WARNING: [Synth 8-3331] design BHT has unconnected port update_PC[27]
+WARNING: [Synth 8-3331] design BHT has unconnected port update_PC[26]
+WARNING: [Synth 8-3331] design BHT has unconnected port update_PC[25]
+WARNING: [Synth 8-3331] design BHT has unconnected port update_PC[24]
+WARNING: [Synth 8-3331] design BHT has unconnected port update_PC[23]
+WARNING: [Synth 8-3331] design BHT has unconnected port update_PC[22]
+WARNING: [Synth 8-3331] design BHT has unconnected port update_PC[21]
+WARNING: [Synth 8-3331] design BHT has unconnected port update_PC[20]
+WARNING: [Synth 8-3331] design BHT has unconnected port update_PC[19]
+WARNING: [Synth 8-3331] design BHT has unconnected port update_PC[18]
+WARNING: [Synth 8-3331] design BHT has unconnected port update_PC[17]
+WARNING: [Synth 8-3331] design BHT has unconnected port update_PC[16]
+WARNING: [Synth 8-3331] design BHT has unconnected port update_PC[15]
+WARNING: [Synth 8-3331] design BHT has unconnected port update_PC[14]
+WARNING: [Synth 8-3331] design BHT has unconnected port update_PC[13]
+WARNING: [Synth 8-3331] design BHT has unconnected port update_PC[12]
+WARNING: [Synth 8-3331] design BHT has unconnected port update_PC[11]
+WARNING: [Synth 8-3331] design BHT has unconnected port update_PC[10]
+WARNING: [Synth 8-3331] design BHT has unconnected port update_PC[9]
+WARNING: [Synth 8-3331] design BHT has unconnected port update_PC[8]
+WARNING: [Synth 8-3331] design BHT has unconnected port update_PC[1]
+WARNING: [Synth 8-3331] design BHT has unconnected port update_PC[0]
+WARNING: [Synth 8-3331] design thinpad_top has unconnected port leds[15]
+WARNING: [Synth 8-3331] design thinpad_top has unconnected port leds[14]
+WARNING: [Synth 8-3331] design thinpad_top has unconnected port leds[13]
+WARNING: [Synth 8-3331] design thinpad_top has unconnected port leds[12]
+WARNING: [Synth 8-3331] design thinpad_top has unconnected port leds[11]
+WARNING: [Synth 8-3331] design thinpad_top has unconnected port leds[10]
+WARNING: [Synth 8-3331] design thinpad_top has unconnected port leds[9]
+WARNING: [Synth 8-3331] design thinpad_top has unconnected port leds[8]
+WARNING: [Synth 8-3331] design thinpad_top has unconnected port leds[7]
+WARNING: [Synth 8-3331] design thinpad_top has unconnected port leds[6]
+WARNING: [Synth 8-3331] design thinpad_top has unconnected port leds[5]
+WARNING: [Synth 8-3331] design thinpad_top has unconnected port leds[4]
+WARNING: [Synth 8-3331] design thinpad_top has unconnected port leds[3]
+WARNING: [Synth 8-3331] design thinpad_top has unconnected port leds[2]
+WARNING: [Synth 8-3331] design thinpad_top has unconnected port leds[1]
+WARNING: [Synth 8-3331] design thinpad_top has unconnected port leds[0]
+WARNING: [Synth 8-3331] design thinpad_top has unconnected port dpy0[7]
+WARNING: [Synth 8-3331] design thinpad_top has unconnected port dpy0[6]
+WARNING: [Synth 8-3331] design thinpad_top has unconnected port dpy0[5]
+WARNING: [Synth 8-3331] design thinpad_top has unconnected port dpy0[4]
+WARNING: [Synth 8-3331] design thinpad_top has unconnected port dpy0[3]
+WARNING: [Synth 8-3331] design thinpad_top has unconnected port dpy0[2]
+WARNING: [Synth 8-3331] design thinpad_top has unconnected port dpy0[1]
+WARNING: [Synth 8-3331] design thinpad_top has unconnected port dpy0[0]
+WARNING: [Synth 8-3331] design thinpad_top has unconnected port dpy1[7]
+WARNING: [Synth 8-3331] design thinpad_top has unconnected port dpy1[6]
+WARNING: [Synth 8-3331] design thinpad_top has unconnected port dpy1[5]
+WARNING: [Synth 8-3331] design thinpad_top has unconnected port dpy1[4]
+WARNING: [Synth 8-3331] design thinpad_top has unconnected port dpy1[3]
+WARNING: [Synth 8-3331] design thinpad_top has unconnected port dpy1[2]
+WARNING: [Synth 8-3331] design thinpad_top has unconnected port dpy1[1]
+WARNING: [Synth 8-3331] design thinpad_top has unconnected port dpy1[0]
+WARNING: [Synth 8-3331] design thinpad_top has unconnected port txd
+WARNING: [Synth 8-3331] design thinpad_top has unconnected port flash_a[22]
+WARNING: [Synth 8-3331] design thinpad_top has unconnected port flash_a[21]
+WARNING: [Synth 8-3331] design thinpad_top has unconnected port flash_a[20]
+WARNING: [Synth 8-3331] design thinpad_top has unconnected port flash_a[19]
+WARNING: [Synth 8-3331] design thinpad_top has unconnected port flash_a[18]
+WARNING: [Synth 8-3331] design thinpad_top has unconnected port flash_a[17]
+WARNING: [Synth 8-3331] design thinpad_top has unconnected port flash_a[16]
+WARNING: [Synth 8-3331] design thinpad_top has unconnected port flash_a[15]
+WARNING: [Synth 8-3331] design thinpad_top has unconnected port flash_a[14]
+WARNING: [Synth 8-3331] design thinpad_top has unconnected port flash_a[13]
+WARNING: [Synth 8-3331] design thinpad_top has unconnected port flash_a[12]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1089.512 ; gain = 310.090
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1089.512 ; gain = 310.090
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1089.512 ; gain = 310.090
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.025 . Memory (MB): peak = 1089.512 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/MIPS/LA32R/CPUProject/thinpad_top.srcs/sources_1/ip/pll_example/pll_example/pll_example_in_context.xdc] for cell 'clock_gen'
+Finished Parsing XDC File [d:/MIPS/LA32R/CPUProject/thinpad_top.srcs/sources_1/ip/pll_example/pll_example/pll_example_in_context.xdc] for cell 'clock_gen'
+Parsing XDC File [D:/MIPS/LA32R/CPUProject/thinpad_top.srcs/constrs_1/new/thinpad_top.xdc]
+WARNING: [Vivado 12-507] No nets matched 'clk_11M0592_IBUF'. [D:/MIPS/LA32R/CPUProject/thinpad_top.srcs/constrs_1/new/thinpad_top.xdc:4]
+WARNING: [Constraints 18-619] A clock with name 'clk_50M' already exists, overwriting the previous clock with the same name. [D:/MIPS/LA32R/CPUProject/thinpad_top.srcs/constrs_1/new/thinpad_top.xdc:6]
+WARNING: [Vivado 12-507] No nets matched 'clock_btn_IBUF'. [D:/MIPS/LA32R/CPUProject/thinpad_top.srcs/constrs_1/new/thinpad_top.xdc:18]
+WARNING: [Vivado 12-507] No nets matched 'reset_btn_IBUF'. [D:/MIPS/LA32R/CPUProject/thinpad_top.srcs/constrs_1/new/thinpad_top.xdc:19]
+CRITICAL WARNING: [Constraints 18-1055] Clock 'cpuclk' completely overrides clock 'clock_gen/clk_out1', which is referenced by one or more other constraints. Any constraints that refer to the overridden clock will be ignored.
+New: create_generated_clock -name cpuclk -source [get_ports clk_50M] -multiply_by 1 [get_pins clock_gen/clk_out1], [D:/MIPS/LA32R/CPUProject/thinpad_top.srcs/constrs_1/new/thinpad_top.xdc:312]
+Previous: create_generated_clock -source [get_ports clk_50M] -edges {1 2 3} -edge_shift {0.000 0.000 0.000} [get_pins clock_gen/clk_out1], [d:/MIPS/LA32R/CPUProject/thinpad_top.srcs/sources_1/ip/pll_example/pll_example/pll_example_in_context.xdc:2]
+Resolution: Review the constraint files and remove the redundant clock definition(s). If the clock constraints are not saved in a file, you can first save the constraints to an XDC file and reload the design once the constraints have been corrected.
+Finished Parsing XDC File [D:/MIPS/LA32R/CPUProject/thinpad_top.srcs/constrs_1/new/thinpad_top.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [D:/MIPS/LA32R/CPUProject/thinpad_top.srcs/constrs_1/new/thinpad_top.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/thinpad_top_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/MIPS/LA32R/CPUProject/thinpad_top.srcs/constrs_1/new/thinpad_top.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/thinpad_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/thinpad_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [D:/MIPS/LA32R/CPUProject/thinpad_top.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [D:/MIPS/LA32R/CPUProject/thinpad_top.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1221.387 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1221.387 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1221.387 ; gain = 441.965
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a200tfbg676-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1221.387 ; gain = 441.965
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for clk_50M. (constraint file  d:/MIPS/LA32R/CPUProject/thinpad_top.srcs/sources_1/ip/pll_example/pll_example/pll_example_in_context.xdc, line 4).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk_50M. (constraint file  d:/MIPS/LA32R/CPUProject/thinpad_top.srcs/sources_1/ip/pll_example/pll_example/pll_example_in_context.xdc, line 5).
+Applied set_property DONT_TOUCH = true for clock_gen. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1221.387 ; gain = 441.965
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5587] ROM size for "RegRead" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5546] ROM "RegDst" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RegWrite" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ALUsrc" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "PCsrc" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MemtoReg" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Extension" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ALUop" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ALU_ctrl" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-327] inferring latch for variable 'RegRead_reg' [D:/MIPS/LA32R/CPUProject/thinpad_top.srcs/sources_1/new/Control.v:45]
+WARNING: [Synth 8-327] inferring latch for variable 'RegDst_reg' [D:/MIPS/LA32R/CPUProject/thinpad_top.srcs/sources_1/new/Control.v:46]
+WARNING: [Synth 8-327] inferring latch for variable 'RegWrite_reg' [D:/MIPS/LA32R/CPUProject/thinpad_top.srcs/sources_1/new/Control.v:47]
+WARNING: [Synth 8-327] inferring latch for variable 'ALUsrc_reg' [D:/MIPS/LA32R/CPUProject/thinpad_top.srcs/sources_1/new/Control.v:48]
+WARNING: [Synth 8-327] inferring latch for variable 'PCsrc_reg' [D:/MIPS/LA32R/CPUProject/thinpad_top.srcs/sources_1/new/Control.v:49]
+WARNING: [Synth 8-327] inferring latch for variable 'MemRead_reg' [D:/MIPS/LA32R/CPUProject/thinpad_top.srcs/sources_1/new/Control.v:50]
+WARNING: [Synth 8-327] inferring latch for variable 'MemWrite_reg' [D:/MIPS/LA32R/CPUProject/thinpad_top.srcs/sources_1/new/Control.v:51]
+WARNING: [Synth 8-327] inferring latch for variable 'MemtoReg_reg' [D:/MIPS/LA32R/CPUProject/thinpad_top.srcs/sources_1/new/Control.v:52]
+WARNING: [Synth 8-327] inferring latch for variable 'ui5From_reg' [D:/MIPS/LA32R/CPUProject/thinpad_top.srcs/sources_1/new/Control.v:53]
+WARNING: [Synth 8-327] inferring latch for variable 'MemByte_reg' [D:/MIPS/LA32R/CPUProject/thinpad_top.srcs/sources_1/new/Control.v:54]
+WARNING: [Synth 8-327] inferring latch for variable 'Extension_reg' [D:/MIPS/LA32R/CPUProject/thinpad_top.srcs/sources_1/new/Control.v:55]
+WARNING: [Synth 8-327] inferring latch for variable 'ALUop_reg' [D:/MIPS/LA32R/CPUProject/thinpad_top.srcs/sources_1/new/Control.v:56]
+WARNING: [Synth 8-327] inferring latch for variable 'ALU_ctrl_reg' [D:/MIPS/LA32R/CPUProject/thinpad_top.srcs/sources_1/new/ALU_Control.v:12]
+WARNING: [Synth 8-327] inferring latch for variable 'branch_taken_reg' [D:/MIPS/LA32R/CPUProject/thinpad_top.srcs/sources_1/new/branch_check.v:30]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 1221.387 ; gain = 441.965
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 7     
++---XORs : 
+	   2 Input     32 Bit         XORs := 3     
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	               32 Bit    Registers := 15    
+	                6 Bit    Registers := 2     
+	                5 Bit    Registers := 5     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 68    
+	                1 Bit    Registers := 77    
++---Multipliers : 
+	                32x32  Multipliers := 1     
++---RAMs : 
+	               2K Bit         RAMs := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 19    
+	   4 Input     32 Bit        Muxes := 2     
+	  13 Input     32 Bit        Muxes := 1     
+	   8 Input     32 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 4     
+	   5 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 6     
+	   7 Input      4 Bit        Muxes := 1     
+	   3 Input      4 Bit        Muxes := 2     
+	  12 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+	  10 Input      3 Bit        Muxes := 1     
+	   6 Input      2 Bit        Muxes := 1     
+	   5 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 9     
+	  10 Input      2 Bit        Muxes := 2     
+	   3 Input      2 Bit        Muxes := 2     
+	  11 Input      2 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 164   
+	   4 Input      1 Bit        Muxes := 3     
+	  10 Input      1 Bit        Muxes := 4     
+	   5 Input      1 Bit        Muxes := 4     
+	   3 Input      1 Bit        Muxes := 6     
+	  13 Input      1 Bit        Muxes := 2     
+	   7 Input      1 Bit        Muxes := 2     
+	  12 Input      1 Bit        Muxes := 1     
+	   8 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module thinpad_top 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
+Module PC 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module BHT 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 64    
++---Muxes : 
+	   6 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 65    
+Module BTB 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	                1 Bit    Registers := 64    
++---RAMs : 
+	               2K Bit         RAMs := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 64    
+Module Resolve_Branch 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 4     
+	   4 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+	   4 Input      1 Bit        Muxes := 3     
+Module IF_ID_Register 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 3     
+	                1 Bit    Registers := 1     
+Module Control 
+Detailed RTL Component Info : 
++---Muxes : 
+	   5 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 6     
+	   7 Input      4 Bit        Muxes := 1     
+	   3 Input      4 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 2     
+	  10 Input      3 Bit        Muxes := 1     
+	   5 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 9     
+	  10 Input      2 Bit        Muxes := 2     
+	   3 Input      2 Bit        Muxes := 2     
+	  11 Input      2 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 29    
+	  10 Input      1 Bit        Muxes := 4     
+	   5 Input      1 Bit        Muxes := 4     
+	   3 Input      1 Bit        Muxes := 6     
+	  13 Input      1 Bit        Muxes := 1     
+	   7 Input      1 Bit        Muxes := 2     
+Module regfile 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+Module Extension 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+Module ID_EX_Register 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 5     
+	                6 Bit    Registers := 2     
+	                5 Bit    Registers := 3     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 5     
+Module ALU_Control 
+Detailed RTL Component Info : 
++---Muxes : 
+	  12 Input      4 Bit        Muxes := 1     
+	  12 Input      1 Bit        Muxes := 1     
+Module CarryLookaheadAdder32 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input     32 Bit         XORs := 2     
+Module ALU 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 2     
++---Multipliers : 
+	                32x32  Multipliers := 1     
++---Muxes : 
+	  13 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+	  13 Input      1 Bit        Muxes := 1     
+Module branch_check 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
++---Muxes : 
+	   8 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 1     
+	   8 Input      1 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+Module EX_MEM_Register 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 3     
+	                5 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
+Module MEM_WB_Register 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 3     
+	                5 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+Module CPU 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 10    
+	   2 Input      5 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 740 (col length:100)
+BRAMs: 730 (col length: RAMB18 100 RAMB36 50)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [D:/MIPS/LA32R/CPUProject/thinpad_top.srcs/sources_1/new/ALU.v:70]
+DSP Report: Generating DSP result0, operation Mode is: A*B.
+DSP Report: operator result0 is absorbed into DSP result0.
+DSP Report: operator result0 is absorbed into DSP result0.
+DSP Report: Generating DSP result0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator result0 is absorbed into DSP result0.
+DSP Report: operator result0 is absorbed into DSP result0.
+DSP Report: Generating DSP result0, operation Mode is: A*B.
+DSP Report: operator result0 is absorbed into DSP result0.
+DSP Report: operator result0 is absorbed into DSP result0.
+DSP Report: Generating DSP result0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator result0 is absorbed into DSP result0.
+DSP Report: operator result0 is absorbed into DSP result0.
+INFO: [Synth 8-3886] merging instance 'cpu/id_ex_register/Extension_Data_reg[20]' (FDR) to 'cpu/id_ex_register/Extension_Data_reg[21]'
+INFO: [Synth 8-3886] merging instance 'cpu/id_ex_register/Extension_Data_reg[21]' (FDR) to 'cpu/id_ex_register/Extension_Data_reg[22]'
+INFO: [Synth 8-3886] merging instance 'cpu/id_ex_register/Extension_Data_reg[22]' (FDR) to 'cpu/id_ex_register/Extension_Data_reg[23]'
+INFO: [Synth 8-3886] merging instance 'cpu/id_ex_register/Extension_Data_reg[23]' (FDR) to 'cpu/id_ex_register/Extension_Data_reg[24]'
+INFO: [Synth 8-3886] merging instance 'cpu/id_ex_register/Extension_Data_reg[24]' (FDR) to 'cpu/id_ex_register/Extension_Data_reg[25]'
+INFO: [Synth 8-3886] merging instance 'cpu/id_ex_register/Extension_Data_reg[25]' (FDR) to 'cpu/id_ex_register/Extension_Data_reg[26]'
+INFO: [Synth 8-3886] merging instance 'cpu/id_ex_register/Extension_Data_reg[26]' (FDR) to 'cpu/id_ex_register/Extension_Data_reg[27]'
+INFO: [Synth 8-3886] merging instance 'cpu/id_ex_register/Extension_Data_reg[27]' (FDR) to 'cpu/id_ex_register/Extension_Data_reg[28]'
+INFO: [Synth 8-3886] merging instance 'cpu/id_ex_register/Extension_Data_reg[28]' (FDR) to 'cpu/id_ex_register/Extension_Data_reg[29]'
+INFO: [Synth 8-3886] merging instance 'cpu/id_ex_register/Extension_Data_reg[29]' (FDR) to 'cpu/id_ex_register/Extension_Data_reg[30]'
+INFO: [Synth 8-3886] merging instance 'cpu/id_ex_register/Extension_Data_reg[30]' (FDR) to 'cpu/id_ex_register/Extension_Data_reg[31]'
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1221.387 ; gain = 441.965
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping	Report (see note below)
++------------+-------------+-----------+----------------------+--------------+
+|Module Name | RTL Object  | Inference | Size (Depth x Width) | Primitives   | 
++------------+-------------+-----------+----------------------+--------------+
+|cpu/btb     | tag_reg     | Implied   | 64 x 32              | RAM64M x 11	 | 
+|cpu/btb     | target_reg  | Implied   | 64 x 32              | RAM64M x 11	 | 
+|cpu/regfile | regfile_reg | Implied   | 32 x 32              | RAM32M x 12	 | 
++------------+-------------+-----------+----------------------+--------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+
+DSP: Preliminary Mapping	Report (see note below)
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping    | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|ALU         | A*B            | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ALU         | (PCIN>>17)+A*B | 15     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ALU         | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ALU         | (PCIN>>17)+A*B | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-565] redefining clock 'clk_50M'
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1224.020 ; gain = 444.598
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 1304.777 ; gain = 525.355
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping	Report
++------------+-------------+-----------+----------------------+--------------+
+|Module Name | RTL Object  | Inference | Size (Depth x Width) | Primitives   | 
++------------+-------------+-----------+----------------------+--------------+
+|cpu/btb     | tag_reg     | Implied   | 64 x 32              | RAM64M x 11	 | 
+|cpu/btb     | target_reg  | Implied   | 64 x 32              | RAM64M x 11	 | 
+|cpu/regfile | regfile_reg | Implied   | 32 x 32              | RAM32M x 12	 | 
++------------+-------------+-----------+----------------------+--------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 1324.789 ; gain = 545.367
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 1329.770 ; gain = 550.348
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 1329.770 ; gain = 550.348
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 1329.770 ; gain = 550.348
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 1329.770 ; gain = 550.348
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 1329.770 ; gain = 550.348
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 1329.770 ; gain = 550.348
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |pll_example   |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+------------+------+
+|      |Cell        |Count |
++------+------------+------+
+|1     |pll_example |     1|
+|2     |CARRY4      |    69|
+|3     |DSP48E1     |     3|
+|4     |LUT1        |    14|
+|5     |LUT2        |   157|
+|6     |LUT3        |   293|
+|7     |LUT4        |    56|
+|8     |LUT5        |   276|
+|9     |LUT6        |   688|
+|10    |MUXF7       |    32|
+|11    |MUXF8       |    14|
+|12    |RAM32M      |    12|
+|13    |RAM64M      |    22|
+|14    |FDPE        |     2|
+|15    |FDRE        |   654|
+|16    |FDSE        |    67|
+|17    |LD          |     5|
+|18    |LDC         |    19|
+|19    |LDCP        |     1|
+|20    |IBUF        |    33|
+|21    |IOBUF       |    32|
+|22    |OBUF        |    54|
+|23    |OBUFT       |    74|
++------+------------+------+
+
+Report Instance Areas: 
++------+--------------------+----------------+------+
+|      |Instance            |Module          |Cells |
++------+--------------------+----------------+------+
+|1     |top                 |                |  2580|
+|2     |  cpu               |CPU             |  2381|
+|3     |    bht             |BHT             |   313|
+|4     |    alu             |ALU             |    22|
+|5     |    alu_control     |ALU_Control     |   206|
+|6     |    branch_check    |branch_check    |     6|
+|7     |    btb             |BTB             |   175|
+|8     |    control         |Control         |    21|
+|9     |    ex_mem_register |EX_MEM_Register |   264|
+|10    |    extension       |Extension       |    21|
+|11    |    id_ex_register  |ID_EX_Register  |   809|
+|12    |    if_id_register  |IF_ID_Register  |   175|
+|13    |    mem_wb_register |MEM_WB_Register |   249|
+|14    |    pc              |PC              |   108|
+|15    |    regfile         |regfile         |    12|
++------+--------------------+----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 1329.770 ; gain = 550.348
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 199 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:25 ; elapsed = 00:00:30 . Memory (MB): peak = 1329.770 ; gain = 418.473
+Synthesis Optimization Complete : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 1329.770 ; gain = 550.348
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.027 . Memory (MB): peak = 1334.309 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 209 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 3 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1334.309 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 91 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 32 instances
+  LD => LDCE: 5 instances
+  LDC => LDCE: 16 instances
+  LDC => LDCE (inverted pins: G): 3 instances
+  LDCP => LDCP (GND, LDCE, LUT3(x2), VCC): 1 instance 
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 12 instances
+  RAM64M => RAM64M (RAMD64E(x4)): 22 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+81 Infos, 144 Warnings, 1 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 1334.309 ; gain = 876.281
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1334.309 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'D:/MIPS/LA32R/CPUProject/thinpad_top.runs/synth_1/thinpad_top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file thinpad_top_utilization_synth.rpt -pb thinpad_top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Mar  9 20:13:12 2025...

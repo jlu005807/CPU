@@ -1,0 +1,72 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/MIPS/LA32R/CPUProject/thinpad_top.srcs/sources_1/ip/pll_example/pll_example_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pll_example_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/MIPS/LA32R/CPUProject/thinpad_top.srcs/sources_1/ip/pll_example/pll_example.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pll_example
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/MIPS/LA32R/CPUProject/thinpad_top.srcs/sim_1/new/28F640P30.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BankLib
+INFO: [VRFC 10-311] analyzing module TimingDataModule
+INFO: [VRFC 10-311] analyzing module TimingLibModule
+INFO: [VRFC 10-311] analyzing module BlockLockModule
+INFO: [VRFC 10-311] analyzing module CFIqueryModule
+INFO: [VRFC 10-311] analyzing module DataErrorModule
+INFO: [VRFC 10-311] analyzing module ConfigRegModule
+INFO: [VRFC 10-311] analyzing module SignatureModule
+INFO: [VRFC 10-311] analyzing module CUIdecoder1
+INFO: [VRFC 10-311] analyzing module CUIdecoder2
+INFO: [VRFC 10-311] analyzing module CUIdecoder_Busy1
+INFO: [VRFC 10-311] analyzing module EraseModule
+INFO: [VRFC 10-311] analyzing module MemoryModule
+INFO: [VRFC 10-311] analyzing module OutputBufferModule
+INFO: [VRFC 10-311] analyzing module ProgramModule
+INFO: [VRFC 10-311] analyzing module BuffEnhancedFactProgramModule
+INFO: [VRFC 10-311] analyzing module ProtectRegModule
+INFO: [VRFC 10-311] analyzing module ReadModule
+INFO: [VRFC 10-311] analyzing module StatusRegModule
+INFO: [VRFC 10-311] analyzing module KernelModule
+INFO: [VRFC 10-311] analyzing module x28fxxxp30
+INFO: [VRFC 10-311] analyzing module BurstModule
+INFO: [VRFC 10-311] analyzing module BlankCheckModule
+INFO: [VRFC 10-311] analyzing module ProgramBufferModule
+INFO: [VRFC 10-311] analyzing module DebugModule
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/MIPS/LA32R/CPUProject/thinpad_top.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/MIPS/LA32R/CPUProject/thinpad_top.srcs/sources_1/new/ALU_Control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_Control
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/MIPS/LA32R/CPUProject/thinpad_top.srcs/sources_1/new/Adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CarryLookaheadAdder32
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/MIPS/LA32R/CPUProject/thinpad_top.srcs/sources_1/new/BHT.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BHT
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/MIPS/LA32R/CPUProject/thinpad_top.srcs/sources_1/new/BTB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BTB
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/MIPS/LA32R/CPUProject/thinpad_top.srcs/sources_1/new/CPU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/MIPS/LA32R/CPUProject/thinpad_top.srcs/sources_1/new/Control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Control
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/MIPS/LA32R/CPUProject/thinpad_top.srcs/sources_1/new/EX_MEM_Register.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EX_MEM_Register
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/MIPS/LA32R/CPUProject/thinpad_top.srcs/sources_1/new/Extension.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Extension
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/MIPS/LA32R/CPUProject/thinpad_top.srcs/sources_1/new/Forward.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Forward
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/MIPS/LA32R/CPUProject/thinpad_top.srcs/sources_1/new/ID_EX_Register.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ID_EX_Register
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/MIPS/LA32R/CPUProject/thinpad_top.srcs/sources_1/new/IF_ID_Register.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IF_ID_Register
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/MIPS/LA32R/CPUProject/thinpad_top.srcs/sources_1/new/Load_use_Data_Hazard.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Load_use_Data_Hazard
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/MIPS/LA32R/CPUProject/thinpad_top.srcs/sources_1/new/MEM_WB_Register.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEM_WB_Register
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/MIPS/LA32R/CPUProject/thinpad_top.srcs/sources_1/new/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/MIPS/LA32R/CPUProject/thinpad_top.srcs/sources_1/new/Resolve_Branch.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Resolve_Branch
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/MIPS/LA32R/CPUProject/thinpad_top.srcs/sources_1/new/branch_check.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module branch_check
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/MIPS/LA32R/CPUProject/thinpad_top.srcs/sim_1/new/clock.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clock
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/MIPS/LA32R/CPUProject/thinpad_top.srcs/sources_1/new/regfile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/MIPS/LA32R/CPUProject/thinpad_top.srcs/sim_1/new/sram_model.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sram_model
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/MIPS/LA32R/CPUProject/thinpad_top.srcs/sources_1/new/thinpad_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module thinpad_top

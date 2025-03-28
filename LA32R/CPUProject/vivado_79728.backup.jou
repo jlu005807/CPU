@@ -1,0 +1,68 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Sun Mar  9 18:52:02 2025
+# Process ID: 79728
+# Current directory: D:/MIPS/LA32R/CPUProject
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent54036 D:\MIPS\LA32R\CPUProject\thinpad_top.xpr
+# Log file: D:/MIPS/LA32R/CPUProject/vivado.log
+# Journal file: D:/MIPS/LA32R/CPUProject\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/MIPS/LA32R/CPUProject/thinpad_top.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source tb.tcl
+current_wave_config {Untitled 1}
+add_wave {{/tb/dut/cpu}} 
+run 5 us
+relaunch_sim
+current_wave_config {Untitled 1}
+add_wave {{/tb/dut/cpu}} 
+run 5 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+relaunch_sim
+run 10 us
+relaunch_sim
+run 10 us
+relaunch_sim
+run 10 us
+relaunch_sim
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+relaunch_sim
+run 10 us
+relaunch_sim
+run 10 us
+relaunch_sim
+run 10 us
+relaunch_sim
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+set_property -dict [list CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {100} CONFIG.MMCM_CLKOUT0_DIVIDE_F {10.000} CONFIG.CLKOUT1_JITTER {162.035}] [get_ips pll_example]
+generate_target all [get_files  D:/MIPS/LA32R/CPUProject/thinpad_top.srcs/sources_1/ip/pll_example/pll_example.xci]
+catch { config_ip_cache -export [get_ips -all pll_example] }
+export_ip_user_files -of_objects [get_files D:/MIPS/LA32R/CPUProject/thinpad_top.srcs/sources_1/ip/pll_example/pll_example.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] D:/MIPS/LA32R/CPUProject/thinpad_top.srcs/sources_1/ip/pll_example/pll_example.xci]
+launch_runs -jobs 8 pll_example_synth_1
+export_simulation -of_objects [get_files D:/MIPS/LA32R/CPUProject/thinpad_top.srcs/sources_1/ip/pll_example/pll_example.xci] -directory D:/MIPS/LA32R/CPUProject/thinpad_top.ip_user_files/sim_scripts -ip_user_files_dir D:/MIPS/LA32R/CPUProject/thinpad_top.ip_user_files -ipstatic_source_dir D:/MIPS/LA32R/CPUProject/thinpad_top.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/MIPS/LA32R/CPUProject/thinpad_top.cache/compile_simlib/modelsim} {questa=D:/MIPS/LA32R/CPUProject/thinpad_top.cache/compile_simlib/questa} {riviera=D:/MIPS/LA32R/CPUProject/thinpad_top.cache/compile_simlib/riviera} {activehdl=D:/MIPS/LA32R/CPUProject/thinpad_top.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+relaunch_sim
+close_sim
+launch_simulation
+reset_run pll_example_synth_1
